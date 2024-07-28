@@ -23,7 +23,7 @@ export default function UpdateStudentDialog({
       <DialogContent>
       <TextField
           margin="dense"
-          name="rollno"
+          name="rollNo"
           label="Student Roll No"
           type="number"
           fullWidth
