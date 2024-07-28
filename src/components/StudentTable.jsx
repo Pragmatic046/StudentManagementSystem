@@ -35,6 +35,7 @@ export default function StudentTable({ students, setStudents }) {
   async function handleSaveStudent() {
     const studentDoc = doc(db, "students", currentStudent.id);
     await updateDoc(studentDoc, {
+      rollNo: currentStudent.rollNo,
       name: currentStudent.name,
       age: currentStudent.age,
     });
