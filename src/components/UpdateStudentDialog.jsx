@@ -21,6 +21,15 @@ export default function UpdateStudentDialog({
     >
       <DialogTitle id="alert-dialog-title">Update Student</DialogTitle>
       <DialogContent>
+      <TextField
+          margin="dense"
+          name="rollno"
+          label="Student Roll No"
+          type="number"
+          fullWidth
+          value={currentStudent?.rollNo || ""}
+          onChange={handleChange}
+        />
         <TextField
           margin="dense"
           name="name"
